@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ | Char Agasti High School & College</title>
+    <meta name="description" content="চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ, গলাচিপা, পটুয়াখালী - একটি আদর্শ শিক্ষা প্রতিষ্ঠান। Char Agasti High School & College, Galachipa, Patuakhali - A Premier Educational Institution." />
+    <meta name="keywords" content="চর আগাস্তি, মাধ্যমিক বিদ্যালয়, কলেজ, গলাচিপা, পটুয়াখালী, শিক্ষা, Char Agasti, High School, College, Galachipa, Patuakhali, Education" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23134e4a' width='32' height='32' rx='6'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='20' font-weight='bold'>C</text></svg>" type="image/svg+xml" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#134e4a',
+                        secondary: '#0f766e',
+                        accent: '#14b8a6',
+                        textDark: '#1f2937',
+                        textLight: '#6b7280',
+                        bgLight: '#f8fafc',
+                        borderColor: '#e5e7eb',
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        error: '#ef4444',
+                    },
+                    boxShadow: {
+                        custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                        'custom-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="script.js"></script>
+     <style>
+    #navContent.flex-col > a {
+      margin-bottom: 0.75rem;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white text-textDark font-sans leading-relaxed">
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+        <div class="spinner border-4 border-primary border-t-transparent rounded-full w-12 h-12 animate-spin"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-borderColor">
+        <div class="bg-primary text-white text-sm py-2 px-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
+            <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start text-sm">
+                <span class="flex items-center gap-1"><i class="fas fa-phone"></i> +880-1-727582457</span>
+                <span class="flex items-center gap-1"><i class="fas fa-envelope"></i> info@charagasti.edu.bd</span>
+                <span class="flex items-center gap-1"><i class="fas fa-clock"></i> রবি - বৃহঃ ৮:০০ - ৪:০০</span>
+            </div>
+            <nav class="flex space-x-4 justify-center md:justify-end">
+                <a href="https://facebook.com/charagastischool" aria-label="Facebook" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" class="hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+            </nav>
+        </div>
+
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo.jpg" alt="Char Agasti Logo" class="h-16 w-16 object-cover rounded-md shadow" />
+                <div>
+                    <h1 class="text-2xl font-extrabold text-primary leading-tight">Char Agasti High School & College</h1>
+                    <h2 class="text-lg text-secondary font-semibold">চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ</h2>
+                    <p class="text-sm text-textLight">Char Agasti, Galachipa, Patuakhali | Established 1995 | EIIN: 102221</p>
+                </div>
+            </div>
+
+            <div class="mt-4 md:mt-0 flex items-center space-x-4">
+                <div class="relative">
+                    <input
+                        type="text"
+                        placeholder="অনুসন্ধান করুন..."
+                        class="border border-borderColor rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-48 md:w-64"
+                    />
+                    <button
+                        type="submit"
+                        class="absolute right-1 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition"
+                        aria-label="Search"
+                    >
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button
+                    id="languageToggle"
+                    class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-md transition"
+                >
+                    বাংলা | English
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-bgLight border-t border-b border-borderColor">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <button
+                    id="mobileToggle"
+                    class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
+                    aria-label="Toggle menu"
+                >
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div
+                    id="navContent"
+                    class="hidden md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide"
+                >
+                    <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-home"></i> হোম
+                    </a>
+                    <a href="about.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-info-circle"></i> আমাদের সম্পর্কে
+                    </a>
+                    <a href="academic.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-graduation-cap"></i> একাডেমিক
+                    </a>
+                    <a href="admission.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-user-plus"></i> ভর্তি
+                    </a>
+                    <a href="results.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-chart-line"></i> ফলাফল
+                    </a>
+                    <a href="faculty.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-users"></i> শিক্ষক মণ্ডলী
+                    </a>
+                    <a href="notice.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-bullhorn"></i> নোটিশ
+                    </a>
+                    <a href="contact.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-phone"></i> যোগাযোগ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile nav toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navContent = document.getElementById('navContent');
+
+        mobileToggle.addEventListener('click', () => {
+          navContent.classList.toggle('hidden');
+        });
+      });
+    </script>
+
+    
+    <div class="main-container">
+        <aside class="sidebar">
+            
+        </aside>
+
+        <main class="main-content">
+            <div class="content-section">
+                <h2 class="text-3xl font-bold mb-6 text-primary-color">একাডেমিক প্রোগ্রাম</h2>
+                
+                <div class="academic-levels mb-12">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-color">শিক্ষা কার্যক্রম</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div class="level-card p-6 bg-white rounded-lg shadow-md">
+                            <div class="level-icon bg-primary-color text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-book-open text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">মাধ্যমিক শাখা</h4>
+                            <p class="text-text-light mb-3">৬ষ্ঠ থেকে ১০ম শ্রেণি পর্যন্ত বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখা</p>
+                            <a href="#" class="text-accent-color font-medium">বিস্তারিত দেখুন</a>
+                        </div>
+                        
+                        <div class="level-card p-6 bg-white rounded-lg shadow-md">
+                            <div class="level-icon bg-secondary-color text-white w-16 h-16 rounded-full flex items-center justify-center mb-4">
+                                <i class="fas fa-graduation-cap text-2xl"></i>
+                            </div>
+                            <h4 class="text-xl font-bold mb-2">উচ্চ মাধ্যমিক শাখা</h4>
+                            <p class="text-text-light mb-3">একাদশ-দ্বাদশ শ্রেণিতে বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখা</p>
+                            <a href="#" class="text-accent-color font-medium">বিস্তারিত দেখুন</a>
+                        </div>
+                    
+                    </div>
+                </div>
+                
+                <div class="curriculum-section">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-color">পাঠ্যক্রম</h3>
+                    <div class="bg-bg-light p-6 rounded-lg">
+                        <div class="overflow-x-auto">
+                            <table class="w-full text-left">
+                                <thead>
+                                    <tr class="bg-primary-color text-white">
+                                        <th class="p-3">শ্রেণি</th>
+                                        <th class="p-3">শাখা</th>
+                                        <th class="p-3">বিষয়সমূহ</th>
+                                        <th class="p-3">সিলেবাস</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr class="border-b border-border-color">
+                                        <td class="p-3">৬ষ্ঠ-৮ম</td>
+                                        <td class="p-3">সাধারণ</td>
+                                        <td class="p-3">বাংলা, ইংরেজি, গণিত, বিজ্ঞান, সমাজ, ধর্ম, ICT</td>
+                                        <td class="p-3"><a href="#" class="text-accent-color">ডাউনলোড</a></td>
+                                    </tr>
+                                    <tr class="border-b border-border-color bg-white">
+                                        <td class="p-3">৯ম-১০ম</td>
+                                        <td class="p-3">বিজ্ঞান</td>
+                                        <td class="p-3">পদার্থ, রসায়ন, জীববিজ্ঞান, উচ্চতর গণিত</td>
+                                        <td class="p-3"><a href="#" class="text-accent-color">ডাউনলোড</a></td>
+                                    </tr>
+                                    <tr class="border-b border-border-color">
+                                        <td class="p-3">একাদশ-দ্বাদশ</td>
+                                        <td class="p-3">ব্যবসায় শিক্ষা</td>
+                                        <td class="p-3">ফিন্যান্স, ব্যাংকিং, ব্যবসায় সংগঠন, হিসাববিজ্ঞান</td>
+                                        <td class="p-3"><a href="#" class="text-accent-color">ডাউনলোড</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+</body>
+</html>

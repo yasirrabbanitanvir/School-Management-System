@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ | Char Agasti High School & College</title>
+    <meta name="description" content="চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ, গলাচিপা, পটুয়াখালী - একটি আদর্শ শিক্ষা প্রতিষ্ঠান। Char Agasti High School & College, Galachipa, Patuakhali - A Premier Educational Institution." />
+    <meta name="keywords" content="চর আগাস্তি, মাধ্যমিক বিদ্যালয়, কলেজ, গলাচিপা, পটুয়াখালী, শিক্ষা, Char Agasti, High School, College, Galachipa, Patuakhali, Education" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23134e4a' width='32' height='32' rx='6'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='20' font-weight='bold'>C</text></svg>" type="image/svg+xml" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#134e4a',
+                        secondary: '#0f766e',
+                        accent: '#14b8a6',
+                        textDark: '#1f2937',
+                        textLight: '#6b7280',
+                        bgLight: '#f8fafc',
+                        borderColor: '#e5e7eb',
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        error: '#ef4444',
+                    },
+                    boxShadow: {
+                        custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                        'custom-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="script.js"></script>
+     <style>
+    #navContent.flex-col > a {
+      margin-bottom: 0.75rem;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white text-textDark font-sans leading-relaxed">
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+        <div class="spinner border-4 border-primary border-t-transparent rounded-full w-12 h-12 animate-spin"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-borderColor">
+        <div class="bg-primary text-white text-sm py-2 px-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
+            <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start text-sm">
+                <span class="flex items-center gap-1"><i class="fas fa-phone"></i> +880-1-727582457</span>
+                <span class="flex items-center gap-1"><i class="fas fa-envelope"></i> info@charagasti.edu.bd</span>
+                <span class="flex items-center gap-1"><i class="fas fa-clock"></i> রবি - বৃহঃ ৮:০০ - ৪:০০</span>
+            </div>
+            <nav class="flex space-x-4 justify-center md:justify-end">
+                <a href="https://facebook.com/charagastischool" aria-label="Facebook" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" class="hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+            </nav>
+        </div>
+
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo.jpg" alt="Char Agasti Logo" class="h-16 w-16 object-cover rounded-md shadow" />
+                <div>
+                    <h1 class="text-2xl font-extrabold text-primary leading-tight">Char Agasti High School & College</h1>
+                    <h2 class="text-lg text-secondary font-semibold">চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ</h2>
+                    <p class="text-sm text-textLight">Char Agasti, Galachipa, Patuakhali | Established 1995 | EIIN: 102221</p>
+                </div>
+            </div>
+
+            <div class="mt-4 md:mt-0 flex items-center space-x-4">
+                <div class="relative">
+                    <input
+                        type="text"
+                        placeholder="অনুসন্ধান করুন..."
+                        class="border border-borderColor rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-48 md:w-64"
+                    />
+                    <button
+                        type="submit"
+                        class="absolute right-1 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition"
+                        aria-label="Search"
+                    >
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button
+                    id="languageToggle"
+                    class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-md transition"
+                >
+                    বাংলা | English
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-bgLight border-t border-b border-borderColor">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <button
+                    id="mobileToggle"
+                    class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
+                    aria-label="Toggle menu"
+                >
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div
+                    id="navContent"
+                    class="hidden md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide"
+                >
+                    <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-home"></i> হোম
+                    </a>
+                    <a href="about.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-info-circle"></i> আমাদের সম্পর্কে
+                    </a>
+                    <a href="academic.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-graduation-cap"></i> একাডেমিক
+                    </a>
+                    <a href="admission.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-user-plus"></i> ভর্তি
+                    </a>
+                    <a href="results.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-chart-line"></i> ফলাফল
+                    </a>
+                    <a href="faculty.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-users"></i> শিক্ষক মণ্ডলী
+                    </a>
+                    <a href="notice.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-bullhorn"></i> নোটিশ
+                    </a>
+                    <a href="contact.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-phone"></i> যোগাযোগ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    
+
+    <!-- Mobile nav toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navContent = document.getElementById('navContent');
+
+        mobileToggle.addEventListener('click', () => {
+          navContent.classList.toggle('hidden');
+        });
+      });
+    </script>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-12 max-w-5xl">
+        <section class="mb-12">
+            <h2 class="text-4xl font-extrabold mb-8 text-primary border-b-4 border-accent inline-block pb-2">
+                যোগাযোগ করুন
+            </h2>
+
+            <div class="grid grid-cols-1 gap-10">
+                <!-- Contact Info -->
+                <div class="bg-bgLight p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6 text-secondary">আমাদের ঠিকানা</h3>
+                    <ul class="space-y-5 text-textDark">
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-map-marker-alt text-primary text-2xl mt-1"></i>
+                            <p>চর আগাস্তি, গলাচিপা, পটুয়াখালী, বাংলাদেশ</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-phone-alt text-primary text-2xl mt-1"></i>
+                            <p>+৮৮০-১৭২৭৫৮২৪৫৭ (অফিস)<br />+৮৮০-১৭২৭৫৮২৪৫৭ (অধ্যক্ষ)</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-envelope text-primary text-2xl mt-1"></i>
+                            <p>info@charagasti.edu.bd<br />principal@cghsc.edu.bd</p>
+                        </li>
+                        <li class="flex items-start gap-4">
+                            <i class="fas fa-clock text-primary text-2xl mt-1"></i>
+                            <p>শনি-বৃহস্পতিবার: সকাল ৮টা - বিকাল ৪টা<br />শুক্রবার ও সরকারি ছুটির দিন বন্ধ</p>
+                        </li>
+                    </ul>
+
+                    <div class="mt-10">
+                        <h4 class="text-xl font-semibold mb-4">সামাজিক যোগাযোগ</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-11 h-11 flex items-center justify-center rounded-full bg-primary text-white hover:bg-secondary transition">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-11 h-11 flex items-center justify-center rounded-full bg-secondary text-white hover:bg-accent transition">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="w-11 h-11 flex items-center justify-center rounded-full bg-accent text-white hover:bg-primary transition">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="bg-white p-8 rounded-lg shadow-lg">
+                    <h3 class="text-2xl font-semibold mb-6 text-secondary">বার্তা পাঠান</h3>
+                    <form class="space-y-6" novalidate>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="name" class="block mb-2 font-medium text-textLight">আপনার নাম</label>
+                                <input id="name" name="name" type="text" placeholder="আপনার নাম লিখুন" required class="w-full border border-borderColor rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                            </div>
+                            <div>
+                                <label for="email" class="block mb-2 font-medium text-textLight">ইমেইল ঠিকানা</label>
+                                <input id="email" name="email" type="email" placeholder="আপনার ইমেইল লিখুন" required class="w-full border border-borderColor rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                            </div>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label for="phone" class="block mb-2 font-medium text-textLight">ফোন নম্বর</label>
+                                <input id="phone" name="phone" type="tel" placeholder="আপনার ফোন নম্বর" class="w-full border border-borderColor rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent" />
+                            </div>
+                            <div>
+                                <label for="subject" class="block mb-2 font-medium text-textLight">বিষয়</label>
+                                <select id="subject" name="subject" class="w-full border border-borderColor rounded-md px-4 py-3 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent">
+                                    <option value="admission">ভর্তি সম্পর্কিত</option>
+                                    <option value="results">ফলাফল সম্পর্কিত</option>
+                                    <option value="fees">ফি সম্পর্কিত</option>
+                                    <option value="others">অন্যান্য</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="message" class="block mb-2 font-medium text-textLight">আপনার বার্তা</label>
+                            <textarea id="message" name="message" rows="5" placeholder="আপনার বার্তা লিখুন..." required class="w-full border border-borderColor rounded-md px-4 py-3 resize-none focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent"></textarea>
+                        </div>
+                        <button type="submit" class="bg-primary hover:bg-secondary text-white font-semibold px-6 py-3 rounded-md transition">
+                            বার্তা পাঠান
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Google Map -->
+        <section>
+            <h3 class="text-3xl font-semibold mb-6 text-secondary border-b-2 border-accent inline-block pb-2">আমাদের অবস্থান</h3>
+            <div class="overflow-hidden rounded-lg shadow-lg mt-6">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d118830.33843759275!2d90.512874!3d21.916083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x30aaac0a8b1e45c1%3A0x2a1a3b1b1b1b1b1b!2sChar%20Agasti%20High%20School%20%26%20College!5e0!3m2!1sen!2sbd!4v1650000000000!5m2!1sen!2sbd"
+                    class="w-full h-96 border-0"
+                    allowfullscreen
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"
+                    title="Char Agasti High School & College Location"
+                ></iframe>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

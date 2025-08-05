@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ | Char Agasti High School & College</title>
+    <meta name="description" content="চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ, গলাচিপা, পটুয়াখালী - একটি আদর্শ শিক্ষা প্রতিষ্ঠান। Char Agasti High School & College, Galachipa, Patuakhali - A Premier Educational Institution." />
+    <meta name="keywords" content="চর আগাস্তি, মাধ্যমিক বিদ্যালয়, কলেজ, গলাচিপা, পটুয়াখালী, শিক্ষা, Char Agasti, High School, College, Galachipa, Patuakhali, Education" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23134e4a' width='32' height='32' rx='6'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='20' font-weight='bold'>C</text></svg>" type="image/svg+xml" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#134e4a',
+                        secondary: '#0f766e',
+                        accent: '#14b8a6',
+                        textDark: '#1f2937',
+                        textLight: '#6b7280',
+                        bgLight: '#f8fafc',
+                        borderColor: '#e5e7eb',
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        error: '#ef4444',
+                    },
+                    boxShadow: {
+                        custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                        'custom-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="script.js"></script>
+     <style>
+    #navContent.flex-col > a {
+      margin-bottom: 0.75rem;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white text-textDark font-sans leading-relaxed">
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+        <div class="spinner border-4 border-primary border-t-transparent rounded-full w-12 h-12 animate-spin"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-borderColor">
+        <div class="bg-primary text-white text-sm py-2 px-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
+            <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start text-sm">
+                <span class="flex items-center gap-1"><i class="fas fa-phone"></i> +880-1-727582457</span>
+                <span class="flex items-center gap-1"><i class="fas fa-envelope"></i> info@charagasti.edu.bd</span>
+                <span class="flex items-center gap-1"><i class="fas fa-clock"></i> রবি - বৃহঃ ৮:০০ - ৪:০০</span>
+            </div>
+            <nav class="flex space-x-4 justify-center md:justify-end">
+                <a href="https://facebook.com/charagastischool" aria-label="Facebook" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" class="hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+            </nav>
+        </div>
+
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo.jpg" alt="Char Agasti Logo" class="h-16 w-16 object-cover rounded-md shadow" />
+                <div>
+                    <h1 class="text-2xl font-extrabold text-primary leading-tight">Char Agasti High School & College</h1>
+                    <h2 class="text-lg text-secondary font-semibold">চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ</h2>
+                    <p class="text-sm text-textLight">Char Agasti, Galachipa, Patuakhali | Established 1995 | EIIN: 102221</p>
+                </div>
+            </div>
+
+            <div class="mt-4 md:mt-0 flex items-center space-x-4">
+                <div class="relative">
+                    <input
+                        type="text"
+                        placeholder="অনুসন্ধান করুন..."
+                        class="border border-borderColor rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-48 md:w-64"
+                    />
+                    <button
+                        type="submit"
+                        class="absolute right-1 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition"
+                        aria-label="Search"
+                    >
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button
+                    id="languageToggle"
+                    class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-md transition"
+                >
+                    বাংলা | English
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-bgLight border-t border-b border-borderColor">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <button
+                    id="mobileToggle"
+                    class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
+                    aria-label="Toggle menu"
+                >
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div
+                    id="navContent"
+                    class="hidden md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide"
+                >
+                    <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-home"></i> হোম
+                    </a>
+                    <a href="about.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-info-circle"></i> আমাদের সম্পর্কে
+                    </a>
+                    <a href="academic.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-graduation-cap"></i> একাডেমিক
+                    </a>
+                    <a href="admission.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-user-plus"></i> ভর্তি
+                    </a>
+                    <a href="results.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-chart-line"></i> ফলাফল
+                    </a>
+                    <a href="faculty.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-users"></i> শিক্ষক মণ্ডলী
+                    </a>
+                    <a href="notice.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-bullhorn"></i> নোটিশ
+                    </a>
+                    <a href="contact.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-phone"></i> যোগাযোগ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile nav toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navContent = document.getElementById('navContent');
+
+        mobileToggle.addEventListener('click', () => {
+          navContent.classList.toggle('hidden');
+        });
+      });
+    </script>
+
+    
+    <div class="main-container">
+        <aside class="sidebar">
+           
+        </aside>
+
+        <main class="main-content">
+            <div class="content-section">
+
+                <h2 class="text-3xl font-bold mb-6 text-primary-color">ভর্তি প্রক্রিয়া</h2>
+
+        <div class="admission-process mb-10">
+            <div class="steps grid grid-cols-1 md:grid-cols-4 gap-6 mb-8">
+                <div class="step-card p-6 bg-white rounded-lg shadow-md text-center">
+                    <!-- Illustrative image -->
+                    <img src="https://img.icons8.com/ios-filled/64/4a90e2/submit-document.png" alt="আবেদন ফর্ম সংগ্রহ" class="mx-auto mb-4" width="64" height="64" />
+                    <div class="step-number bg-primary-color text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">১</div>
+                    <h4 class="text-lg font-bold mb-2">আবেদন ফর্ম সংগ্রহ</h4>
+                    <p class="text-sm text-text-light">অফিস থেকে বা ওয়েবসাইট থেকে ফর্ম ডাউনলোড করুন</p>
+                </div>
+
+                <div class="step-card p-6 bg-white rounded-lg shadow-md text-center">
+                    <img src="https://img.icons8.com/ios-filled/64/4a90e2/submit-document.png" alt="ফর্ম জমা দিন" class="mx-auto mb-4" width="64" height="64" />
+                    <div class="step-number bg-primary-color text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">২</div>
+                    <h4 class="text-lg font-bold mb-2">ফর্ম জমা দিন</h4>
+                    <p class="text-sm text-text-light">পূরণকৃত ফর্ম প্রয়োজনীয় কাগজপত্র সহ জমা দিন</p>
+                </div>
+
+                <div class="step-card p-6 bg-white rounded-lg shadow-md text-center">
+                    <img src="https://img.icons8.com/ios-filled/64/4a90e2/test-passed.png" alt="ভর্তি পরীক্ষা" class="mx-auto mb-4" width="64" height="64" />
+                    <div class="step-number bg-primary-color text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">৩</div>
+                    <h4 class="text-lg font-bold mb-2">ভর্তি পরীক্ষা</h4>
+                    <p class="text-sm text-text-light">নির্ধারিত তারিখে ভর্তি পরীক্ষায় অংশগ্রহণ করুন</p>
+                </div>
+
+                <div class="step-card p-6 bg-white rounded-lg shadow-md text-center">
+                    <img src="https://img.icons8.com/ios-filled/64/4a90e2/checked-checkbox.png" alt="ফলাফল ও ভর্তি" class="mx-auto mb-4" width="64" height="64" />
+                    <div class="step-number bg-primary-color text-white w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-4 text-xl font-bold">৪</div>
+                    <h4 class="text-lg font-bold mb-2">ফলাফল ও ভর্তি</h4>
+                    <p class="text-sm text-text-light">ফলাফল প্রকাশ ও নির্বাচিতদের ভর্তি সম্পন্ন</p>
+                </div>
+            </div>
+
+            <div class="notice-box bg-warning-color bg-opacity-10 p-4 rounded-lg border-l-4 border-warning-color">
+                <div class="flex items-start">
+                    <i class="fas fa-exclamation-circle text-warning-color text-2xl mr-3 mt-1"></i>
+                    <div>
+                        <h4 class="font-bold text-lg mb-1">গুরুত্বপূর্ণ নোটিশ</h4>
+                        <p class="text-text-light">২০২৫-২৬ শিক্ষাবর্ষের ভর্তি প্রক্রিয়া শুরু হবে আগামী ১লা সেপ্টেম্বর থেকে। অনলাইন আবেদন লিংক শীঘ্রই চালু হবে।</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+               
+                
+                <div class="requirements-section">
+                    <h3 class="text-2xl font-semibold mb-4 text-secondary-color">ভর্তির প্রয়োজনীয় কাগজপত্র</h3>
+                    <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                        <div class="bg-bg-light p-6 rounded-lg">
+                            <h4 class="text-lg font-bold mb-3 text-primary-color">নতুন ভর্তির জন্য</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-text-light">
+                                <li>জন্ম নিবন্ধন সনদ (সত্যায়িত কপি)</li>
+                                <li>পূর্ববর্তী প্রতিষ্ঠানের ট্রান্সফার সার্টিফিকেট</li>
+                                <li>২ কপি পাসপোর্ট সাইজ রঙিন ছবি</li>
+                                <li>অভিভাবকের জাতীয় পরিচয়পত্রের ফটোকপি</li>
+                                <li>শিক্ষার্থীর স্বাস্থ্য পরীক্ষার রিপোর্ট</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="bg-bg-light p-6 rounded-lg">
+                            <h4 class="text-lg font-bold mb-3 text-primary-color">উচ্চ মাধ্যমিকে ভর্তির জন্য</h4>
+                            <ul class="list-disc pl-6 space-y-2 text-text-light">
+                                <li>এসএসসি পরীক্ষার মূল মার্কশিট</li>
+                                <li>এসএসসি পাস সনদ (সত্যায়িত কপি)</li>
+                                <li>চরিত্র সনদ (প্রাক্তন প্রতিষ্ঠান থেকে)</li>
+                                <li>২ কপি পাসপোর্ট সাইজ রঙিন ছবি</li>
+                                <li>অভিভাবকের আয়ের প্রমাণপত্র</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

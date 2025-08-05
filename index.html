@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html lang="bn">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ | Char Agasti High School & College</title>
+    <meta name="description" content="চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ, গলাচিপা, পটুয়াখালী - একটি আদর্শ শিক্ষা প্রতিষ্ঠান। Char Agasti High School & College, Galachipa, Patuakhali - A Premier Educational Institution." />
+    <meta name="keywords" content="চর আগাস্তি, মাধ্যমিক বিদ্যালয়, কলেজ, গলাচিপা, পটুয়াখালী, শিক্ষা, Char Agasti, High School, College, Galachipa, Patuakhali, Education" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect fill='%23134e4a' width='32' height='32' rx='6'/><text x='16' y='22' text-anchor='middle' fill='white' font-size='20' font-weight='bold'>C</text></svg>" type="image/svg+xml" />
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#134e4a',
+                        secondary: '#0f766e',
+                        accent: '#14b8a6',
+                        textDark: '#1f2937',
+                        textLight: '#6b7280',
+                        bgLight: '#f8fafc',
+                        borderColor: '#e5e7eb',
+                        success: '#10b981',
+                        warning: '#f59e0b',
+                        error: '#ef4444',
+                    },
+                    boxShadow: {
+                        custom: '0 4px 6px -1px rgba(0, 0, 0, 0.1)',
+                        'custom-lg': '0 10px 15px -3px rgba(0, 0, 0, 0.1)',
+                    },
+                },
+            },
+        };
+    </script>
+    <script src="script.js"></script>
+     <style>
+    #navContent.flex-col > a {
+      margin-bottom: 0.75rem;
+    }
+  </style>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body class="bg-white text-textDark font-sans leading-relaxed">
+
+    <!-- Loading overlay -->
+    <div id="loadingOverlay" class="fixed inset-0 bg-white flex items-center justify-center z-50 hidden">
+        <div class="spinner border-4 border-primary border-t-transparent rounded-full w-12 h-12 animate-spin"></div>
+    </div>
+
+    <!-- Header -->
+    <header class="border-b border-borderColor">
+        <div class="bg-primary text-white text-sm py-2 px-4 flex flex-col md:flex-row md:justify-between md:items-center space-y-2 md:space-y-0">
+            <div class="flex flex-wrap gap-6 items-center justify-center md:justify-start text-sm">
+                <span class="flex items-center gap-1"><i class="fas fa-phone"></i> +880-1-727582457</span>
+                <span class="flex items-center gap-1"><i class="fas fa-envelope"></i> info@charagasti.edu.bd</span>
+                <span class="flex items-center gap-1"><i class="fas fa-clock"></i> রবি - বৃহঃ ৮:০০ - ৪:০০</span>
+            </div>
+            <nav class="flex space-x-4 justify-center md:justify-end">
+                <a href="https://facebook.com/charagastischool" aria-label="Facebook" class="hover:text-accent transition"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" aria-label="Twitter" class="hover:text-accent transition"><i class="fab fa-twitter"></i></a>
+                <a href="#" aria-label="YouTube" class="hover:text-accent transition"><i class="fab fa-youtube"></i></a>
+                <a href="#" aria-label="LinkedIn" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
+            </nav>
+        </div>
+
+        <div class="container mx-auto px-4 py-6 flex flex-col md:flex-row md:items-center md:justify-between">
+            <div class="flex items-center space-x-4">
+                <img src="images/logo.jpg" alt="Char Agasti Logo" class="h-16 w-16 object-cover rounded-md shadow" />
+                <div>
+                    <h1 class="text-2xl font-extrabold text-primary leading-tight">Char Agasti High School & College</h1>
+                    <h2 class="text-lg text-secondary font-semibold">চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ</h2>
+                    <p class="text-sm text-textLight">Char Agasti, Galachipa, Patuakhali | Established 1995 | EIIN: 102221</p>
+                </div>
+            </div>
+
+            <div class="mt-4 md:mt-0 flex items-center space-x-4">
+                <div class="relative">
+                    <input
+                        type="text"
+                        placeholder="অনুসন্ধান করুন..."
+                        class="border border-borderColor rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-48 md:w-64"
+                    />
+                    <button
+                        type="submit"
+                        class="absolute right-1 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition"
+                        aria-label="Search"
+                    >
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <button
+                    id="languageToggle"
+                    class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-md transition"
+                >
+                    বাংলা | English
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Navigation -->
+    <nav class="bg-bgLight border-t border-b border-borderColor">
+        <div class="container mx-auto px-4">
+            <div class="flex items-center justify-between py-3">
+                <button
+                    id="mobileToggle"
+                    class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
+                    aria-label="Toggle menu"
+                >
+                    <i class="fas fa-bars text-xl"></i>
+                </button>
+                <div
+                    id="navContent"
+                    class="hidden md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide"
+                >
+                    <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-home"></i> হোম
+                    </a>
+                    <a href="about.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-info-circle"></i> আমাদের সম্পর্কে
+                    </a>
+                    <a href="academic.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-graduation-cap"></i> একাডেমিক
+                    </a>
+                    <a href="admission.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-user-plus"></i> ভর্তি
+                    </a>
+                    <a href="results.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-chart-line"></i> ফলাফল
+                    </a>
+                    <a href="faculty.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-users"></i> শিক্ষক মণ্ডলী
+                    </a>
+                    <a href="notice.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-bullhorn"></i> নোটিশ
+                    </a>
+                    <a href="contact.html" class="nav-item hover:text-secondary flex items-center gap-1">
+                        <i class="fas fa-phone"></i> যোগাযোগ
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile nav toggle script -->
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        const mobileToggle = document.getElementById('mobileToggle');
+        const navContent = document.getElementById('navContent');
+
+        mobileToggle.addEventListener('click', () => {
+          navContent.classList.toggle('hidden');
+        });
+      });
+    </script>
+
+    <!-- Main Content Container -->
+    <div class="main-container">
+        
+        <!-- Sidebar Section -->
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <i class="fas fa-list"></i> দ্রুত লিংক
+            </div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="calendar.html" data-action="calendar">
+                        <span class="icon"><i class="fas fa-calendar-alt"></i></span>
+                        একাডেমিক ক্যালেন্ডার
+                    </a>
+                </li>
+                <li>
+                    <a href="routine.html" data-action="routine">
+                        <span class="icon"><i class="fas fa-clock"></i></span>
+                        ক্লাস রুটিন
+                    </a>
+                </li>
+                <li>
+                    <a href="exam-schedule.html" data-action="exam">
+                        <span class="icon"><i class="fas fa-file-alt"></i></span>
+                        পরীক্ষার রুটিন
+                    </a>
+                </li>
+                <li>
+                    <a href="admission-form.html" data-action="online-form">
+                        <span class="icon"><i class="fas fa-laptop"></i></span>
+                        অনলাইন আবেদন
+                    </a>
+                </li>
+                <li>
+                    <a href="library.html" data-action="library">
+                        <span class="icon"><i class="fas fa-book"></i></span>
+                        লাইব্রেরি
+                    </a>
+                </li>
+                <li>
+                    <a href="transport.html" data-action="transport">
+                        <span class="icon"><i class="fas fa-bus"></i></span>
+                        পরিবহন সেবা
+                    </a>
+                </li>
+                <li>
+                    <a href="payment.html" data-action="payment">
+                        <span class="icon"><i class="fas fa-credit-card"></i></span>
+                        অনলাইন পেমেন্ট
+                    </a>
+                </li>
+            </ul>
+
+            <!-- Quick Links Widget -->
+            <div class="quick-links">
+                <div class="quick-links-header">
+                    <i class="fas fa-external-link-alt"></i> গুরুত্বপূর্ণ লিংক
+                </div>
+                <div class="quick-links-list">
+                    <a href="https://moedu.gov.bd/" target="_blank" class="quick-link">
+                        <i class="fas fa-globe"></i>
+                        শিক্ষা মন্ত্রণালয়
+                    </a>
+                    <a href="https://dhakaeducationboard.gov.bd/" target="_blank" class="quick-link">
+                        <i class="fas fa-university"></i>
+                        শিক্ষা বোর্ড ঢাকা
+                    </a>
+                    <a href="https://www.educationboard.gov.bd/" target="_blank" class="quick-link">
+                        <i class="fas fa-certificate"></i>
+                        এইচএসসি রেজিস্ট্রেশন
+                    </a>
+                    <a href="https://nctb.gov.bd/books" target="_blank" class="quick-link">
+                        <i class="fas fa-file-pdf"></i>
+                        পাঠ্যপুস্তক ডাউনলোড
+                    </a>
+                </div>
+            </div>
+        </aside>
+
+        <!-- Main Content Area -->
+        <main class="main-content">
+            <!-- Hero Slider -->
+            <div class="hero-slider">
+                <div class="slide slide1 active">
+                    <div class="slide-content">
+                        <h2>শিক্ষার আলোয় আলোকিত ভবিষ্যৎ</h2>
+                        <p>৩০ বছরের গৌরবময় ইতিহাসে আমরা গড়ে তুলেছি হাজারো সফল মানুষ</p>
+                        <a href="about.html" class="cta-button">আরও জানুন</a>
+                    </div>
+                </div>
+                <div class="slide slide2">
+                    <div class="slide-content">
+                        <h2>আধুনিক শিক্ষা ব্যবস্থা</h2>
+                        <p>বিজ্ঞান ও প্রযুক্তির সাথে তাল মিলিয়ে উন্নত শিক্ষা পদ্ধতি</p>
+                        <a href="admission.html" class="cta-button">ভর্তির আবেদন</a>
+                    </div>
+                </div>
+                <div class="slide slide3">
+                    <div class="slide-content">
+                        <h2>আদর্শ শিক্ষা প্রতিষ্ঠান</h2>
+                        <p>নৈতিক মূল্যবোধ ও আধুনিক শিক্ষার সমন্বয়ে গড়ি আগামীর নেতৃত্ব</p>
+                        <a href="contact.html" class="cta-button">যোগাযোগ করুন</a>
+                    </div>
+                </div>
+                <div class="slider-controls">
+                    <div class="slider-dot active" data-slide="0"></div>
+                    <div class="slider-dot" data-slide="1"></div>
+                    <div class="slider-dot" data-slide="2"></div>
+                </div>
+            </div>
+
+            <!-- Welcome Section -->
+            <div class="content-section">
+                <div class="welcome-section">
+                    <div class="welcome-content">
+                        <h2>প্রতিষ্ঠান সম্পর্কে</h2>
+                        <p>চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ ১৯৯৫ সালে প্রতিষ্ঠিত পটুয়াখালী জেলার একটি অগ্রণী শিক্ষাপ্রতিষ্ঠান। প্রতিষ্ঠার পর থেকে আমরা গড়ে তুলেছি অসংখ্য মেধাবী ও আদর্শবান শিক্ষার্থী যারা বিভিন্ন ক্ষেত্রে সাফল্যের সাথে এগিয়ে যাচ্ছে।</p>
+                        <p>আমাদের শিক্ষাব্যবস্থা আধুনিক প্রযুক্তি ও মূল্যবোধের সমন্বয়ে গঠিত। দক্ষ ও অভিজ্ঞ শিক্ষকগণ, উন্নত শ্রেণীকক্ষ, এবং শিক্ষাবান্ধব পরিবেশে আমরা শিক্ষার্থীদের সর্বোচ্চ মানের শিক্ষা প্রদান করে থাকি।</p>
+                        <p>৬ষ্ঠ থেকে উচ্চ মাধ্যমিক পর্যন্ত রয়েছে বিজ্ঞান, মানবিক ও ব্যবসায় শিক্ষা শাখা। আমাদের লক্ষ্য হচ্ছে প্রতিটি শিক্ষার্থীকে একজন সৎ, দক্ষ ও দায়িত্বশীল নাগরিক হিসেবে গড়ে তোলা।</p>
+                        <p>শিক্ষার পাশাপাশি সাংস্কৃতিক চর্চা, খেলাধুলা, নৈতিক শিক্ষা ও সহশিক্ষা কার্যক্রমের মাধ্যমে শিক্ষার্থীদের সর্বাঙ্গীণ বিকাশে আমরা সহায়তা করি।</p>
+                    </div>
+                    
+                    <div class="principal-card">
+                        <div class="principal-photo"></div>
+                        <div class="principal-info">
+                            <h3>অধ্যক্ষের বার্তা</h3>
+                            <div class="title">মোঃ কবির হোসেন (ভারপ্রাপ্ত)</div>
+                            <p><strong>শিক্ষাগত যোগ্যতা:</strong> বিএড, এমএ</p>
+                            <p><strong>অভিজ্ঞতা:</strong> ২৫+ বছর</p>
+                            <p>"শিক্ষা শুধু পুঁথিগত নয়, এটি জীবনের দিকনির্দেশনা। আমরা শিক্ষার্থীদের মানুষ হিসেবে গড়ে তোলার লক্ষ্যে কাজ করে যাচ্ছি।"</p>
+                            <p><strong>যোগাযোগ:</strong> principal@charagasti.edu.bd</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Statistics Section -->
+            <div class="stats-section">
+                <div class="stats-grid">
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="600">0</div>
+                        <div class="stat-label">মোট শিক্ষার্থী</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="20">0</div>
+                        <div class="stat-label">শিক্ষক ও কর্মচারী</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="30">0</div>
+                        <div class="stat-label">বছরের অভিজ্ঞতা</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number" data-count="12000">0</div>
+                        <div class="stat-label">সফল প্রাক্তন ছাত্র</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <!-- Notice Board & Results Section -->
+
+        <div class="max-w-5xl mx-auto py-10 px-4">
+        <h1 class="text-3xl md:text-4xl font-bold text-primary text-center border-b-2 border-accent pb-3 mb-10">নোটিশ বোর্ড</h1>
+
+        <section class="space-y-8">
+            <article class="bg-white rounded-lg shadow-custom p-6 border border-borderColor">
+                <h2 class="text-xl font-semibold text-primary mb-2">০৫ আগস্ট: জুলাই গণ-অভ্যুত্থান দিবস</h2>
+                <p class="text-textLight leading-relaxed">
+                    আজ ৫ই আগস্ট, আমরা শ্রদ্ধার সঙ্গে স্মরণ করছি ১৯৭১ সালের জুলাই গণ-অভ্যুত্থান দিবস। এই দিনে আত্মত্যাগকারী শহীদদের
+                    প্রতি জানাই বিনম্র শ্রদ্ধা। তাঁদের সাহসিকতা আমাদের জাতীয় চেতনার অনুপ্রেরণা। এই দিনটি আমাদের গণতন্ত্র ও স্বাধীনতা
+                    রক্ষার সংগ্রামের এক গৌরবোজ্জ্বল অধ্যায়।
+                </p>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-custom p-6 border border-borderColor">
+                <h2 class="text-xl font-semibold text-secondary mb-2">একাডেমিক ও প্রশাসনিক কার্যক্রম</h2>
+                <p class="text-textLight leading-relaxed">
+                    আগামীকাল থেকে কলেজের সকল একাডেমিক ও প্রশাসনিক কার্যক্রম যথারীতি চালু থাকবে। শিক্ষার্থীদের নির্ধারিত সময়ে উপস্থিত
+                    থেকে ক্লাসে অংশগ্রহণের অনুরোধ জানানো হচ্ছে।
+                </p>
+            </article>
+
+            <article class="bg-white rounded-lg shadow-custom p-6 border border-borderColor">
+                <h2 class="text-xl font-semibold text-accent mb-2">২০২৫ সালের বার্ষিক পরীক্ষা</h2>
+                <p class="text-textLight leading-relaxed">
+                    ২০২৫ সালের বার্ষিক পরীক্ষা শুরু হবে আগামী ১২ নভেম্বর থেকে। পরীক্ষার বিস্তারিত সময়সূচি কলেজ নোটিশ বোর্ড এবং
+                    অফিসিয়াল ওয়েবসাইটে প্রকাশিত হয়েছে। সকল শিক্ষার্থীকে যথাযথ প্রস্তুতি নেওয়ার জন্য অনুরোধ করা হচ্ছে।
+                </p>
+            </article>
+        </section>
+
+        <footer class="mt-12 text-right text-sm text-textLight">
+            - কলেজ প্রশাসন
+        </footer>
+
+    </div>
+    
+   
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>যোগাযোগের তথ্য</h3>
+                <p><i class="fas fa-map-marker-alt"></i> চর আগাস্তি, গলাচিপা, পটুয়াখালী</p>
+                <p><i class="fas fa-phone"></i> +৮৮০-১৭২৭৫৮২৪৫৭</p>
+                <p><i class="fas fa-envelope"></i> info@charagasti.edu.bd</p>
+                <p><i class="fas fa-globe"></i> www.charagasti.edu.bd</p>
+            </div>
+            
+            <div class="footer-section">
+                <h3>গুরুত্বপূর্ণ লিংক</h3>
+                <ul>
+                    <li><a href="admission.html">ভর্তি তথ্য</a></li>
+                    <li><a href="calendar.html">একাডেমিক ক্যালেন্ডার</a></li>
+                    <li><a href="student-portal.html">শিক্ষার্থী তথ্য</a></li>
+                    <li><a href="faculty.html">শিক্ষক তথ্য</a></li>
+                    <li><a href="results.html">পরীক্ষার ফলাফল</a></li>
+                    <li><a href="payment.html">অনলাইন পেমেন্ট</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>একাডেমিক বিভাগ</h3>
+                <ul>
+                    <li><a href="secondary.html">মাধ্যমিক শাখা</a></li>
+                    <li><a href="higher-secondary.html">উচ্চ মাধ্যমিক শাখা</a></li>
+                    <li><a href="science.html">বিজ্ঞান বিভাগ</a></li>
+                    <li><a href="business.html">ব্যবসায় শিক্ষা বিভাগ</a></li>
+                    <li><a href="humanities.html">মানবিক বিভাগ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>সেবা সমূহ</h3>
+                <ul>
+                    <li><a href="library.html">লাইব্রেরি</a></li>
+                    <li><a href="sports.html">খেলাধুলার সুবিধা</a></li>
+                    <li><a href="health.html">স্বাস্থ্য সেবা</a></li>
+                    <li><a href="canteen.html">ক্যান্টিন সেবা</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; ২০২৫ চর আগাস্তি মাধ্যমিক বিদ্যালয় ও কলেজ। সকল অধিকার সংরক্ষিত। | ডিজাইন ও ডেভেলপমেন্ট: Yasir</p>
+        </div>
+    </footer>
+
+    <script>
+document.addEventListener('DOMContentLoaded', function () {
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.slide');
+    const dots = document.querySelectorAll('.slider-dot');
+    const totalSlides = slides.length;
+
+    function showSlide(n) {
+        if (slides.length === 0 || dots.length === 0) return;
+        slides[currentSlide].classList.remove('active');
+        dots[currentSlide].classList.remove('active');
+        currentSlide = (n + totalSlides) % totalSlides;
+        slides[currentSlide].classList.add('active');
+        dots[currentSlide].classList.add('active');
+    }
+
+    function nextSlide() {
+        showSlide(currentSlide + 1);
+    }
+
+    if (totalSlides > 0) {
+        setInterval(nextSlide, 5000);
+        dots.forEach((dot, index) => {
+            dot.addEventListener('click', () => showSlide(index));
+        });
+    }
+});
+
+    function animateStats() {
+        const statNumbers = document.querySelectorAll('.stat-number');
+        statNumbers.forEach(stat => {
+            const target = parseInt(stat.getAttribute('data-count'));
+            const increment = target / 100;
+            let current = 0;
+            const timer = setInterval(() => {
+                current += increment;
+                if (current >= target) {
+                    current = target;
+                    clearInterval(timer);
+                }
+                stat.textContent = Math.floor(current).toLocaleString();
+            }, 20);
+        });
+    }
+
+    
+    window.addEventListener('load', animateStats);
+
+</script>
+</body>
+</html>
