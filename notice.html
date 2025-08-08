@@ -122,11 +122,12 @@
 
     </header>
 
-    <!-- Navigation -->
+<!-- Navigation -->
 <nav class="bg-bgLight border-t border-b border-borderColor relative z-50">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between py-3">
-      <!-- Hamburger Button -->
+
+      <!-- Hamburger Button (mobile only) -->
       <button
         id="mobileToggle"
         class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
@@ -135,19 +136,21 @@
         <i class="fas fa-bars text-xl"></i>
       </button>
 
-      <!-- Mobile Sidebar -->
+      <!-- Navigation Links -->
       <div
         id="navContent"
-        class="fixed top-0 left-0 h-full w-64 bg-bgLight shadow-lg transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide z-50"
+        class="fixed top-0 left-0 h-full w-64 bg-bgLight shadow-lg transform -translate-x-full transition-transform duration-300 
+        md:relative md:translate-x-0 md:flex md:space-x-6 md:items-center md:h-auto md:w-auto md:bg-transparent md:shadow-none 
+        flex-col md:flex-row font-semibold text-primary tracking-wide z-50"
       >
-        <!-- Close Button -->
+        <!-- Close Button (mobile only) -->
         <div class="flex justify-end md:hidden p-4">
           <button id="closeSidebar" class="text-2xl text-primary">
             <i class="fas fa-times"></i>
           </button>
         </div>
 
-        <!-- Navigation Links (your original links here, untouched) -->
+        <!-- Navigation Links (unchanged) -->
         <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
           <i class="fas fa-home"></i> হোম
         </a>
@@ -173,9 +176,11 @@
           <i class="fas fa-phone"></i> যোগাযোগ
         </a>
       </div>
+
     </div>
   </div>
 </nav>
+
 
 <script>
   document.addEventListener('DOMContentLoaded', () => {

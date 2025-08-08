@@ -882,14 +882,14 @@
                 width: 100%;
             }
             
-            .nav-content {
+            /* .nav-content {
                 flex-direction: column;
                 display: none;
             }
             
             .nav-content.active {
                 display: flex;
-            }
+            } */
             
             .mobile-menu-toggle {
                 display: block;
