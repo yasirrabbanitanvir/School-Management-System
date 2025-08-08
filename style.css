@@ -778,12 +778,59 @@
             color: var(--accent-color);
         }
 
-        .footer-bottom {
+        /* .footer-bottom {
             border-top: 1px solid rgba(255, 255, 255, 0.2);
             padding: 20px 0;
             text-align: center;
             margin-top: 30px;
             opacity: 0.8;
+        } */
+
+        .footer-container {
+            background: linear-gradient(to right, #d1ecf1, #e0f7fa);
+            padding: 20px 15px;
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            border-top: 1px solid #cfd8dc;
+        }
+
+        .footer-info {
+            color: #37474f;
+            font-size: 15px;
+            margin-bottom: 12px;
+            line-height: 1.6;
+        }
+
+        .beta-footer {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            flex-wrap: wrap;
+            flex-direction: row;
+        }
+
+        .label-text {
+            color: #000000;
+            font-size: 15px;
+            font-weight: 500;
+            white-space: nowrap;
+        }
+
+        .dev-badge {
+            background-color: #2196f3;
+            color: white;
+            padding: 6px 14px;
+            border-radius: 6px;
+            font-weight: bold;
+            font-size: 14px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+            transition: transform 0.2s ease;
+            white-space: nowrap;
+        }
+
+        .dev-badge:hover {
+            transform: scale(1.05);
         }
 
         /* Animations */
@@ -858,13 +905,8 @@
                 grid-template-columns: 1fr;
             }
             
-            /* .slide-content h2 {
+            .slide-content h2 {
                 font-size: 2rem;
-            } */
-
-             .sidebar,
-            .quick-links {
-                display: none;
             }
             
             .stats-grid {
@@ -881,12 +923,95 @@
                 grid-template-columns: 1fr;
                 gap: 30px;
             }
-        }
+
+              .sidebar,
+            .quick-links {
+                display: none;
+            }
+
+            .header-top {
+                padding: 10px 0;
+            }
+
+            .header-top-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .social-links a {
+                width: 25px;
+                height: 25px;
+            }
+
+            .search-input {
+                width: 100%;
+                padding-right: 40px;
+            }
+
+            .search-btn {
+                right: 15px;
+            }
+            .language-toggle {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+            .hero-slider {
+                height: 300px;
+            }
+            .slide-content h2 {
+                font-size: 1.8rem;
+            }
+            .slide-content p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+
+             .contact-info {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .footer-info {
+            font-size: 14px;
+            }
+
+            .beta-footer {
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .label-text,
+            .dev-badge {
+                font-size: 14px;
+            }
+
+            .dev-badge {
+                padding: 5px 12px;
+            }
+  
+                }
 
         @media (max-width: 480px) {
-            /* .slide-content h2 {
+
+            .slide-content h2 {
                 font-size: 1.5rem;
-            } */
+            }
             
             .stats-grid {
                 grid-template-columns: 1fr;
@@ -895,11 +1020,87 @@
             .content-section {
                 padding: 20px;
             }
+
+            .sidebar,
+            .quick-links {
+                display: none;
         }
 
-        .sidebar,
-        .quick-links {
-            display: none;
+            .header-top {
+                padding: 10px 0;
+            }
+
+            .header-top-content {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .contact-info {
+                flex-direction: column;
+                gap: 5px;
+            }
+
+            .social-links a {
+                width: 25px;
+                height: 25px;
+            }
+
+            .search-input {
+                width: 100%;
+                padding-right: 40px;
+            }
+
+            .search-btn {
+                right: 15px;
+            }
+            .language-toggle {
+                width: 100%;
+                text-align: center;
+                padding: 10px;
+            }
+            .hero-slider {
+                height: 300px;
+            }
+            .slide-content h2 {
+                font-size: 1.8rem;
+            }
+            .slide-content p {
+                font-size: 1rem;
+            }
+            .cta-button {
+                padding: 12px 20px;
+                font-size: 1rem;
+            }
+
+             .contact-info {
+                flex-direction: column;
+                gap: 10px;
+                text-align: center;
+            }
+            
+            .footer-content {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+            .footer-info {
+                font-size: 14px;
+            }
+
+            .beta-footer {
+                flex-direction: column;
+                align-items: center;
+                gap: 6px;
+            }
+
+            .label-text,
+            .dev-badge {
+                font-size: 14px;
+            }
+
+            .dev-badge {
+                padding: 5px 12px;
+            }
+
         }
 
         /* Custom Scrollbar */
