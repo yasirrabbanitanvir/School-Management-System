@@ -68,9 +68,11 @@
                 <a href="#" aria-label="LinkedIn" class="hover:text-accent transition"><i class="fab fa-linkedin-in"></i></a>
             </nav>
         </div>
-        
+
         <div class="container mx-auto px-4 py-6">
   <div class="flex flex-col md:flex-row md:items-center md:justify-between space-y-4 md:space-y-0">
+    
+    <!-- Logo & Text Section -->
     <div class="flex flex-col items-center md:flex-row md:items-center md:space-x-4 w-full">
       <img src="images/logo.jpg" alt="Char Agasti Logo" class="h-16 w-16 object-cover rounded-md shadow mb-2 md:mb-0" />
       
@@ -86,33 +88,35 @@
         </p>
       </div>
     </div>
+
+    <!-- Search & Language Button Section -->
+    <div class="mt-4 md:mt-0 flex flex-col items-center md:flex-row md:items-center md:space-x-4 space-y-3 md:space-y-0">
+      <div class="relative w-full md:w-auto">
+        <input
+          type="text"
+          placeholder="অনুসন্ধান করুন..."
+          class="border border-borderColor rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-full md:w-64"
+        />
+        <button
+          type="submit"
+          class="absolute right-3 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition"
+          aria-label="Search"
+        >
+          <i class="fas fa-search"></i>
+        </button>
+      </div>
+      
+      <button
+        id="languageToggle"
+        class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-md transition w-full md:w-auto"
+      >
+        বাংলা | English
+      </button>
+    </div>
+
   </div>
 </div>
 
-
-            <div class="mt-4 md:mt-0 flex items-center space-x-4">
-                <div class="relative">
-                    <input
-                        type="text"
-                        placeholder="অনুসন্ধান করুন..."
-                        class="border border-borderColor rounded-md px-4 py-2 focus:outline-none focus:ring-2 focus:ring-primary focus:border-transparent w-48 md:w-64"
-                    />
-                    <button
-                        type="submit"
-                        class="absolute right-1 top-1/2 -translate-y-1/2 text-primary hover:text-secondary transition"
-                        aria-label="Search"
-                    >
-                        <i class="fas fa-search"></i>
-                    </button>
-                </div>
-                <button
-                    id="languageToggle"
-                    class="bg-secondary hover:bg-accent text-white px-4 py-2 rounded-md transition"
-                >
-                    বাংলা | English
-                </button>
-            </div>
-        </div>
     </header>
 
     <!-- Navigation -->
