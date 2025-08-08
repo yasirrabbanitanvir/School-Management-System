@@ -819,12 +819,10 @@
         .dev-badge {
             background-color: #10b981;
             color: white;
-            padding: 6px 14px;
+            padding: 6px 6px;
             border-radius: 6px;
-            font-weight: bold;
+            /* font-weight: bold; */
             font-size: 14px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-            transition: transform 0.2s ease;
             white-space: nowrap;
         }
 
