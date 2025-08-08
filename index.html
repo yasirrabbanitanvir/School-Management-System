@@ -10,6 +10,8 @@
     
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     
     <!-- Tailwind CSS CDN -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -90,7 +92,7 @@
     </div>
 
     <!-- Search & Language Button Section -->
-    <div class="mt-4 md:mt-0 flex flex-col items-center md:flex-row md:items-center md:space-x-4 space-y-3 md:space-y-0">
+    <div class="mt-4 md:mt-0 hidden md:flex flex-col items-center md:flex-row md:items-center md:space-x-4 space-y-3 md:space-y-0">
       <div class="relative w-full md:w-auto">
         <input
           type="text"
@@ -117,63 +119,82 @@
   </div>
 </div>
 
+
     </header>
 
     <!-- Navigation -->
-    <nav class="bg-bgLight border-t border-b border-borderColor">
-        <div class="container mx-auto px-4">
-            <div class="flex items-center justify-between py-3">
-                <button
-                    id="mobileToggle"
-                    class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
-                    aria-label="Toggle menu"
-                >
-                    <i class="fas fa-bars text-xl"></i>
-                </button>
-                <div
-                    id="navContent"
-                    class="hidden md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide"
-                >
-                    <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-home"></i> হোম
-                    </a>
-                    <a href="about.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-info-circle"></i> আমাদের সম্পর্কে
-                    </a>
-                    <a href="academic.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-graduation-cap"></i> একাডেমিক
-                    </a>
-                    <a href="admission.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-user-plus"></i> ভর্তি
-                    </a>
-                    <a href="results.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-chart-line"></i> ফলাফল
-                    </a>
-                    <a href="faculty.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-users"></i> শিক্ষক মণ্ডলী
-                    </a>
-                    <a href="notice.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-bullhorn"></i> নোটিশ
-                    </a>
-                    <a href="contact.html" class="nav-item hover:text-secondary flex items-center gap-1">
-                        <i class="fas fa-phone"></i> যোগাযোগ
-                    </a>
-                </div>
-            </div>
+<nav class="bg-bgLight border-t border-b border-borderColor relative z-50">
+  <div class="container mx-auto px-4">
+    <div class="flex items-center justify-between py-3">
+      <!-- Hamburger Button -->
+      <button
+        id="mobileToggle"
+        class="md:hidden p-2 rounded-md text-primary hover:bg-primary/20 transition"
+        aria-label="Toggle menu"
+      >
+        <i class="fas fa-bars text-xl"></i>
+      </button>
+
+      <!-- Mobile Sidebar -->
+      <div
+        id="navContent"
+        class="fixed top-0 left-0 h-full w-64 bg-bgLight shadow-lg transform -translate-x-full transition-transform duration-300 md:relative md:translate-x-0 md:flex md:space-x-6 flex-col md:flex-row font-semibold text-primary tracking-wide z-50"
+      >
+        <!-- Close Button -->
+        <div class="flex justify-end md:hidden p-4">
+          <button id="closeSidebar" class="text-2xl text-primary">
+            <i class="fas fa-times"></i>
+          </button>
         </div>
-    </nav>
 
-    <!-- Mobile nav toggle script -->
-    <script>
-      document.addEventListener('DOMContentLoaded', () => {
-        const mobileToggle = document.getElementById('mobileToggle');
-        const navContent = document.getElementById('navContent');
+        <!-- Navigation Links (your original links here, untouched) -->
+        <a href="index.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-home"></i> হোম
+        </a>
+        <a href="about.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-info-circle"></i> আমাদের সম্পর্কে
+        </a>
+        <a href="academic.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-graduation-cap"></i> একাডেমিক
+        </a>
+        <a href="admission.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-user-plus"></i> ভর্তি
+        </a>
+        <a href="results.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-chart-line"></i> ফলাফল
+        </a>
+        <a href="faculty.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-users"></i> শিক্ষক মণ্ডলী
+        </a>
+        <a href="notice.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-bullhorn"></i> নোটিশ
+        </a>
+        <a href="contact.html" class="nav-item hover:text-secondary flex items-center gap-1 px-4 py-2 md:p-0">
+          <i class="fas fa-phone"></i> যোগাযোগ
+        </a>
+      </div>
+    </div>
+  </div>
+</nav>
 
-        mobileToggle.addEventListener('click', () => {
-          navContent.classList.toggle('hidden');
-        });
-      });
-    </script>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const mobileToggle = document.getElementById('mobileToggle');
+    const navContent = document.getElementById('navContent');
+    const closeSidebar = document.getElementById('closeSidebar');
+
+    mobileToggle.addEventListener('click', () => {
+      navContent.classList.remove('-translate-x-full');
+    });
+
+    closeSidebar.addEventListener('click', () => {
+      navContent.classList.add('-translate-x-full');
+    });
+  });
+</script>
+
+
+
 
     <!-- Main Content Container -->
     <div class="main-container">
