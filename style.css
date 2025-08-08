@@ -787,15 +787,13 @@
         } */
 
         .footer-container {
-            background: linear-gradient(to right, #d1ecf1, #e0f7fa);
             padding: 20px 15px;
             text-align: center;
             font-family: 'Poppins', sans-serif;
-            border-top: 1px solid #cfd8dc;
         }
 
         .footer-info {
-            color: #37474f;
+            color: white;
             font-size: 15px;
             margin-bottom: 12px;
             line-height: 1.6;
@@ -811,6 +809,7 @@
         }
 
         .label-text {
+
             color: #000000;
             font-size: 15px;
             font-weight: 500;
@@ -818,7 +817,7 @@
         }
 
         .dev-badge {
-            background-color: #2196f3;
+            background-color: #10b981;
             color: white;
             padding: 6px 14px;
             border-radius: 6px;
@@ -829,9 +828,6 @@
             white-space: nowrap;
         }
 
-        .dev-badge:hover {
-            transform: scale(1.05);
-        }
 
         /* Animations */
         @keyframes slideInUp {
